@@ -39,7 +39,7 @@ public class TollService {
 	}
 	
 
-	@RequestMapping(value="/tolls}",method=RequestMethod.POST)
+	@RequestMapping(value="/tolls",method=RequestMethod.POST)
 	public ResponseEntity<TollUsage> save(@RequestBody TollUsage tollUsage){
 		
 		tollRepository.save(tollUsage);
